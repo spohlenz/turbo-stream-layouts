@@ -1,0 +1,30 @@
+<h2>Test#index</h2>
+
+<h3>HTML template</h3>
+
+<p>
+  <%= link_to "HTML template", template_path %>
+  <%= link_to "HTML template with layout true", template_layout_true_path %>
+  <%= link_to "HTML template with custom layout", template_custom_layout_path %>
+</p>
+
+<h3>Inline HTML</h3>
+
+<p>
+  <%= link_to "Inline HTML with no layout", inline_path %>
+  <%= link_to "Inline HTML with layout true", inline_layout_true_path %>
+  <%= link_to "Inline HTML with custom layout", inline_custom_layout_path %>
+</p>
+
+<h3>Turbo Streams</h3>
+
+<p>
+  <%= button_to "Turbo stream template", turbo_template_path %>
+  <%= button_to "Turbo stream template with layout true", turbo_template_layout_true_path %>
+  <%= button_to "Turbo stream inline", turbo_inline_path %>
+  <%= button_to "Turbo stream inline with layout true", turbo_inline_layout_true_path %>
+  <%= button_to "Turbo stream inline with explicit layout", turbo_inline_explicit_layout_path %>
+</p>
+
+<div id="container" style="border: 1px solid blue; padding: 1rem;">
+</div>
